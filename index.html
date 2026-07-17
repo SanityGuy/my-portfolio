@@ -8,7 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap');
@@ -44,7 +46,6 @@
         .nav-link { cursor: pointer; transition: color 0.3s; }
         .nav-link:hover { color: var(--accent); }
 
-        /* Scanning line effect */
         .scanline {
             width: 100%; height: 2px; background: rgba(255, 0, 0, 0.1);
             position: fixed; top: 0; z-index: 10; pointer-events: none;
@@ -64,7 +65,7 @@
         </div>
         <div class="flex space-x-6 text-[10px] uppercase tracking-widest">
             <span onclick="scrollToSection('#about')" class="nav-link">01_ABOUT</span>
-            <span onclick="scrollToSection('#work')" class="nav-link">02_ARCHIVE</span>
+            <span onclick="scrollToSection('#work')" class="nav-link">02_PROJECTS</span>
             <span onclick="scrollToSection('#contact')" class="nav-link">03_CONTACT</span>
         </div>
     </nav>
@@ -89,9 +90,9 @@
                 <p class="text-[10px] text-zinc-600 mb-4 font-bold">// SYSTEM_SPECS</p>
                 <ul class="space-y-4 text-xs">
                     <li><span class="text-red-600">[CLASS]</span> SOFTWARE_ENGINEER</li>
-                    <li><span class="text-red-600">[SKILL]</span> JAVA / EXCEL_AUTOMATION / API</li>
-                    <li><span class="text-red-600">[LANGS]</span> RU_LOCALIZATION / EN / ID</li>
-                    <li><span class="text-red-600">[TRAIT]</span> ENTJ_SYSTEMS_THINKER</li>
+                    <li><span class="text-red-600">[SKILL]</span> JAVA / PYTHON / C++ / EXCEL </li>
+                    <li><span class="text-red-600">[LANGS]</span> RU / EN / ID / MY</li>
+                    <li><span class="text-red-600">[STATUS]</span> REQUEST GATE OPEN</li>
                 </ul>
             </div>
         </div>
@@ -103,20 +104,47 @@
             
             <div class="project-card p-10 group">
                 <p class="text-red-600 text-[10px] mb-2">// PROJECT_01</p>
-                <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors">ATLAS_TRANSLATION_CORE</h3>
-                <p class="text-zinc-500 text-xs leading-relaxed mb-6">A high-performance Java framework designed for Minecraft environments. Handles thousands of NPC dialogues with dynamic placeholder injection and real-time RU/EN/ID switching.</p>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors">ZULU SPIGOT DEVELOPMENT</h3>
+                <p class="text-zinc-500 text-xs leading-relaxed mb-6">Built a custom Spigot plugin ecosystem for Minecraft servers, featuring advanced permission control, localized command handling, and optimized event-driven runtime logic for seamless multiplayer performance.</p>
                 <div class="flex gap-4 opacity-50 text-[10px]">
-                    <span>#JAVA</span> <span>#LOCALIZATION</span> <span>#API</span>
+                    <span>#JAVA</span> <span>#DEVELOPMENT</span> <span>#API</span>
                 </div>
             </div>
 
             <div class="project-card p-10 group">
                 <p class="text-red-600 text-[10px] mb-2">// PROJECT_02</p>
-                <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors">LOGIC_STREAM_SCRIPTS</h3>
-                <p class="text-zinc-500 text-xs leading-relaxed mb-6">Optimized Excel automation engine utilizing complex switch-logic to bypass manual data entry for educational datasets. Reduced processing time by 85%.</p>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors">PROFESSIONAL STORE WEBSITE</h3>
+                <p class="text-zinc-500 text-xs leading-relaxed mb-6">Designed and deployed a responsive ecommerce frontend with secure checkout flow, backend inventory automation, and custom payment integration to streamline sales and order management.</p>
                 <div class="flex gap-4 opacity-50 text-[10px]">
-                    <span>#DATA</span> <span>#EXCEL_PRO</span> <span>#AUTOMATION</span>
+                    <span>#WEB</span> <span>#Ecommerce</span> <span>#PAYMENTS</span>
                 </div>
+            </div>
+
+            <div class="project-card p-10 group">
+                <p class="text-red-600 text-[10px] mb-2">// PROJECT_03</p>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors">INTEGRATED WEBHOOK BASED CHAT</h3>
+                <p class="text-zinc-500 text-xs leading-relaxed mb-6">Implemented webhook-based chat integration for real-time communication, automated message routing, and extensible bot commands across collaborative platforms.</p>
+                <div class="flex gap-4 opacity-50 text-[10px]">
+                    <span>#WEB</span> <span>#CHAT</span> <span>#INTEGRATION</span>
+                </div>
+            </div>
+
+            <div class="project-card p-10 group">
+                <p class="text-red-600 text-[10px] mb-2">// PROJECT_04</p>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors">PYTHON CALCULATOR</h3>
+                <p class="text-zinc-500 text-xs leading-relaxed mb-6">Developed a feature-rich Python calculator with a clean GUI, supporting basic arithmetic operations, scientific functions, and customizable themes.</p>
+                <div class="flex gap-4 opacity-50 text-[10px]">
+                    <span>#PYTHON</span> <span>#GUI</span> <span>#MATH</span>
+                </div>
+            </div>
+
+            <div class="col-span-full flex justify-center mt-12">
+                <a href="https://github.com/SanityGuy" target="_blank" rel="noopener" class="group inline-flex items-center space-x-2 border border-zinc-800 hover:border-red-600 px-6 py-3 text-sm uppercase tracking-wider font-bold text-zinc-400 hover:text-red-400 transition-all">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    <span>View My Github</span>
+                </a>
             </div>
 
         </div>
@@ -126,22 +154,33 @@
         <h2 class="text-4xl md:text-6xl font-bold mb-8 terminal-cursor" id="contact-head"></h2>
         <div class="space-y-4">
             <p class="text-zinc-600 text-xs mb-10">AWAITING_INPUT...</p>
-            <a href="mailto:souyan@example.com" class="block border-b-2 border-red-600 text-xl md:text-3xl hover:bg-red-600 hover:text-black transition-all px-4 py-2">SOUYAN.M@PROTO.COL</a>
+<a href="mailto:shark.mazumder@gmail.com" class="block border-b-2 border-red-600 text-xl md:text-3xl hover:bg-red-600 hover:text-black transition-all px-4 py-2 mb-6">shark.mazumder@gmail.com</a>
+<div class="flex flex-wrap justify-center gap-4 max-w-md mx-auto">
+
+    <a href="https://instagram.com/sanityguy88" class="group flex items-center space-x-2 border border-red-600 hover:bg-red-600/10 px-6 py-2 text-sm uppercase tracking-wider font-bold text-zinc-300 hover:text-red-200 transition-all" target="_blank" rel="noopener">
+        <svg class="w-4 h-4 text-pink-400 group-hover:text-pink-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <span>@sanityguy88</span>
+    </a>
+    <a href="https://t.me/souyanka404" class="group flex items-center space-x-2 border border-red-600 hover:bg-red-600/10 px-6 py-2 text-sm uppercase tracking-wider font-bold text-zinc-300 hover:text-red-200 transition-all ml-4" target="_blank" rel="noopener">
+        <svg class="w-4 h-4 text-red-400 group-hover:text-red-300" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        <span>@souyanka404</span>
+    </a>
+</div>
+
         </div>
     </section>
 
     <script>
-        // --- MATRIX BACKGROUND ---
         const canvas = document.getElementById('matrix');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-        const chars = "0101010101010101ABCDEF"; // Binary-focused matrix
+        const chars = "0101010101010101ABCDEF";
         const fontSize = 12;
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
         function drawMatrix() {
             ctx.fillStyle = "rgba(2, 2, 2, 0.05)"; ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "#600"; // Dim red
+            ctx.fillStyle = "#600";
             ctx.font = fontSize + "px 'Fira Code'";
             for (let i = 0; i < drops.length; i++) {
                 const text = chars[Math.floor(Math.random() * chars.length)];
@@ -152,20 +191,17 @@
         }
         setInterval(drawMatrix, 50);
 
-        // --- GSAP TEXT TYPING LOGIC ---
         gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
         function scrollToSection(id) {
             gsap.to(window, { duration: 1.5, scrollTo: id, ease: "power4.inOut" });
         }
 
-        // Hero Typing
         window.addEventListener('load', () => {
             gsap.to("#hero-title", { duration: 2, text: "SOUYAN_M", ease: "none" });
             gsap.to("#hero-desc", { duration: 3, delay: 1, text: "Lead Software Engineer specializing in backend architecture and technical localization. I build the systems that bridge the gap between human intent and machine execution.", ease: "none" });
         });
 
-        // Scroll-Triggered Typing Sections
         const typingSections = [
             { id: "#about-head", text: "> WHO_AM_I?" },
             { id: "#about-text", text: "I am a developer and linguistic strategist based in Indonesia. I don't just write code; I design scalable logic. I don't just translate text; I adapt context. Whether it's a Java-based Minecraft plugin or high-level technical documentation, I ensure the final output is precise and optimized." },
